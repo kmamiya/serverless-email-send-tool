@@ -24,4 +24,4 @@ http://logicalrabbit.jp/serverless-email-send-tool
 
 # LICENSE
 
-Copyright (c) 2015 Kentarou Mamiya. See LICENSE for details. 
+Copyright (c) 2016 Kentarou Mamiya. See LICENSE for details. 
