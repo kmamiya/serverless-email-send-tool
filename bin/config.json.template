@@ -1,0 +1,10 @@
+{
+  "identity_url": "ConoHa identity_service URL",
+  "user_agent": "Test tool (example.jp)",
+  "username": "ConoHa API account",
+  "password": "ConoHa API password",
+  "tenant_id": "ConoHa API tenant ID",
+  "mail_to": "Your email address",
+  "mail_account": "reporter",
+  "mail_password": "Sender account password"
+}
