@@ -49,6 +49,9 @@ This value get from the token request result.
 """
         return self.endpoints['mailhosting']['endpoints'][0]['publicURL']
 
+    def imageservice_endpoint( self ):
+        return 'https://image-service.tyo1.conoha.io'
+
     def connect( self, username, password, tenant_id ):
         """\
 Start connection to ConoHa API.
@@ -241,3 +244,31 @@ Start connection to ConoHa API.
             return self.http_status
         else:
             response.close()
+
+    def list_image( self ):
+        try:
+            response = urlopen( urllib2.Request(
+                urljoin( self.imageservice_endpoint(), '/v2/images' ),
+                None,
+                self.auth_headers
+            ) )
+            self.http_status = response.getcode()
+            if self.success():
+                infos = json.loads( response.read() )
+
+                image_info = {}
+                for info in infos['images']:
+                    image_info[info['name']] = info
+
+                response.close()
+
+                return image_info
+            else:
+                response.close()
+                return self.http_status
+        except HTTPError as err:
+            self.http_status = err.code
+            return self.http_status
+        else:
+            response.close()
+
