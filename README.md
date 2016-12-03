@@ -5,7 +5,7 @@ You need ConoHa ( https://www.conoha.jp/conoha/ ) account for this tool use.
 
 # Install
 
-1. `git clone git@github.com:kmamiya/serverless-email-send-tool.git`
+1. `git clone https://github.com/kmamiya/serverless-email-send-tool.git`
 2. `cd serverless-email-send-tool/bin`
 3. rename or copy from config.json.template
 4. edit config.json 
@@ -24,4 +24,4 @@ http://logicalrabbit.jp/serverless-email-send-tool
 
 # LICENSE
 
-Copyright (c) 2015 Kentarou Mamiya. See LICENSE for details. 
+Copyright (c) 2016 Kentarou Mamiya. See LICENSE for details. 
