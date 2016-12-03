@@ -18,6 +18,10 @@ I think the following use case;
 - (On OS initialize, I wait long long time for yum upgrade...) `$ sudo yum -y upgrade ; ./notify_mail.py config.json 'Report from server' <(echo 'yum upgrade finished')`
 - (On application complie) `$ make ; ./notify__mail.py config.json 'Report from server' <(make check; echo $?)`
 
+[2016-12-03]Append;
+I appended the function for getting diskimage list from ConoHa.
+I published the sample code for getting diskimage list on Gist [kmamiya/list_diskimage_sample.py](https://gist.github.com/kmamiya/6ad9765bccd0b13227ae76d2a8b16a6c)
+
 # Website (Japanese)
 
 http://logicalrabbit.jp/serverless-email-send-tool
