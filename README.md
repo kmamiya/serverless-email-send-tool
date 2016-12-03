@@ -19,6 +19,7 @@ I think the following use case;
 - (On application complie) `$ make ; ./notify__mail.py config.json 'Report from server' <(make check; echo $?)`
 
 [2016-12-03]Append;
+
 I appended the function for getting diskimage list from ConoHa.
 I published the sample code for getting diskimage list on Gist [kmamiya/list_diskimage_sample.py](https://gist.github.com/kmamiya/6ad9765bccd0b13227ae76d2a8b16a6c)
 
